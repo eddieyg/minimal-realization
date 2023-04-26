@@ -16,11 +16,12 @@ const routes: RouteRecordRaw[] = [
         },
       },
       {
-        path: '/example',
-        name: 'example',
-        component: () => import('@/pages/example/Index.vue'),
+        path: '/js-binary',
+        name: 'js-binary',
+        component: () => import('@/pages/js-binary/Index.vue'),
         meta: {
-          title: 'example page title',
+          title: 'binary in js',
+          homeList: true,
         },
       },
     ],

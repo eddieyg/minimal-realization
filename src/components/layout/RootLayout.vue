@@ -4,9 +4,9 @@
       <h1>{{ packageInfo.name }}</h1>
       <nav>
         <ul>
-          <li v-for="nav in navList" :key="nav.name">
-            <router-link :to="{ name: nav.name }">
-              {{ nav.name }}
+          <li>
+            <router-link :to="{ name: 'main' }">
+              Home
             </router-link>
           </li>
         </ul>
@@ -20,9 +20,6 @@
 
 <script setup lang="ts">
 import packageInfo from '../../../package.json'
-import routes from '@/router/routes'
-
-const navList = routes[0].children
 </script>
 
 <style lang="scss" scoped>

@@ -1,17 +1,20 @@
 <template>
   <main class="index-page">
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo">
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="~@assets/image/vue.svg" class="logo vue" alt="Vue logo">
-    </a>
-    <HelloWorld msg="HelloWorld" />
+    <h2>Realization List</h2>
+    <ul>
+      <li v-for="nav in navList" :key="nav.name">
+        <router-link :to="{ name: nav.name }">
+          {{ nav.name }}
+        </router-link>
+      </li>
+    </ul>
   </main>
 </template>
 
 <script setup lang="ts">
-import HelloWorld from './HelloWorld.vue'
+import routes from '@/router/routes'
+
+const navList = routes[0].children.filter(r => r.meta?.homeList)
 </script>
 
 <style lang="scss" scoped>
