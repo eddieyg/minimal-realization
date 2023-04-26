@@ -8,6 +8,9 @@
             <router-link :to="{ name: 'main' }">
               Home
             </router-link>
+            <router-link to="https://github.com/eddieyg/minimal-realization">
+              Github
+            </router-link>
           </li>
         </ul>
       </nav>
