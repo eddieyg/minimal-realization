@@ -10,9 +10,9 @@
             </router-link>
           </li>
           <li>
-            <router-link to="https://github.com/eddieyg/minimal-realization">
+            <a target="_blank" href="https://github.com/eddieyg/minimal-realization">
               Github
-            </router-link>
+            </a>
           </li>
         </ul>
       </nav>
